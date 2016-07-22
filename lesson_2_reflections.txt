@@ -2,4 +2,24 @@ What happens when you initialize a repository? Why do you need to do it?
     You go to a directory and run 'git init' command.  This put git metadata into the directory and turns it into repository.
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
-    Staging area is the middle place between the working directory and commit.  You put files there when you want to commit them.
+    Staging area is the middle place between the working directory and commit.  You put files there when you want to commit them.  Staging area lets you to only commit what you're ready to commit without commiting everything.
+
+How can you use the staging area to make sure you have one commit per logical change?
+    Not sure actually.  :-/  Not sure about the purpose of the staging area -- why not just commit the files I want for the logical change right away? But maybe it's not possible, and I only can add the logical change files in the staging area and then commit them?
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+    Let's say I'm building a website.  At first, all the changes are linear and I only have one master branch.  But then I have an idea to have 2 different versions of my site: one with a member area and the one without.  I would create another branch to try creating the member area that will not break my website.  The master branch is a branch that works perfectly and never breaks.  The other branches are either developmental branches that have work in progress and experimental branches that you can share with others and have others work on them without affecting the master branch.
+
+How do the diagrams help you visualize the branch structure?
+    It really helps vizualizing the structure of the branches.  It gets very complex and hard to understand what's going on otherwise.  It would be easy to get lost in commits and branches otherwise.
+
+    Quiz: Merging Coins Into Master
+If a branch is deleted and leaves some commits unreachable from existing branches, those commits will continue to be accessible by commit id, until Git’s garbage collection runs. This will happen automatically from time to time, unless you actively turn it off. You can also run this process manually with git gc.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+    When merging two branches together, we keep all their commits history with that merge.  After we delete the merged branch, we can still access all its commits from the master branch.  We only delete the branch label, not the branch itself.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+    It's great that Git doesn't want to decide what to do with the questionable merge conflicts because only authors really know what to do with them.  Otherwise merges would result in crazy bugs and it would be hard to find and fix them.
+
+    SO I can use git right now without ever using GitHub for all my projects.  For example, I can use it for my portfolio project and make linear commits to allow 'undo' and create branches to have parallel versions of my portfolio.  Since I'm the only one working on them right now.
