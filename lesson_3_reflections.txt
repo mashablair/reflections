@@ -2,6 +2,8 @@ When would you want to use a remote repository rather than keeping all your work
 local?
 
     For example, when I work with other people and there are several contributors on a project. Also, when I don't have an access to my local machine.  
+    
+    Why do we need GitHub?  We only need Git if we work by ourselves, pretty much.  But if there are other people who need to contribute, they don't have access to my local machine, so there should be some medium for us all to collaborate.  Ths medium is GitHub.  
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
