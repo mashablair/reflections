@@ -1,2 +1,5 @@
 What happens when you initialize a repository? Why do you need to do it?
     You go to a directory and run 'git init' command.  This put git metadata into the directory and turns it into repository.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+    Staging area is the middle place between the working directory and commit.  You put files there when you want to commit them.
